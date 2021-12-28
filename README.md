@@ -1,2 +1,2 @@
 # Data-Structure-S3
-This is for Data Structure Programs.
+This contains Data Structures Lab Programs.
