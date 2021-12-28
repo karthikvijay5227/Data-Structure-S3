@@ -1,9 +1,10 @@
 #include<stdio.h>
-#include"abc.h"
 
+void Read(int [],int);
 void Qsort(int A[],int l,int r);
 int Partition(int A[],int l,int r);
 void Swap(int *a,int *b);
+void Print(int [],int);
 
 void main()
 {
@@ -13,6 +14,29 @@ void main()
  Read(A,n);
  Qsort(A,0,n-1);
  Print(A,n);
+}
+
+void Read(int A[],int n)
+{
+ printf("Enter the elements:");
+ for(int i=0;i<n;i++)
+ {
+  scanf("%d",&A[i]);
+ } 
+ printf("Array before sorting is:");
+ for(int i=0;i<n;i++)
+ {
+  printf("%d ",A[i]);
+ }
+}
+
+void Print(int A[],int n)
+{
+ printf("\nThe sorted array is:");
+ for(int i=0;i<n;i++)
+ {
+  printf("%d ",A[i]);
+ }
 }
 
 void Qsort(int A[],int l,int r)
