@@ -27,10 +27,7 @@ void InsertQ(int item)
  else
  {
   if(f==-1)
-  {
-    f=0;
-    r=0;
-  }
+    f=r=0;
   else
     r=(r+1)%n;
   Q[r]=item;
@@ -60,10 +57,11 @@ void Display()
  else 
  {
   printf("Queue contents are:");
-  for(int i=f;i<=r;i++)
+  for(int i=f;i!=r;i=(i+1)%n)
   {
    printf("%d ",Q[i]);
   }
+  printf("%d",Q[r]);
  }
 }
 
