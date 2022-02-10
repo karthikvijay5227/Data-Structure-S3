@@ -53,27 +53,27 @@ int DeleteFront()
 void InsertFront(int item)
 {
  if(isfull())
-		printf("Queue is full");
-	else
-		if(isempty())
-			f=r=0;
-		else
-			f = (f+n-1)%n;
-		Q[f]= item;
+    printf("Queue is full");
+ else
+    if(isempty())
+      f=r=0;
+    else
+      f = (f+n-1)%n;
+ Q[f]= item;
 }
 
 int DeleteRear()
 {
  int index = -1;
-	if(isempty())
-		printf("Queue is empty");
-	else
-		index = r;
-	if(f == r)
-		f = r = -1;
-	else
-		r = (r + n-1)%n;
-	return index;
+ if(isempty())
+   printf("Queue is empty");
+ else
+   index = r;
+ if(f == r)
+   f = r = -1;
+ else
+   r = (r + n-1)%n;
+ return index;
 }
 
 void Display()
@@ -83,10 +83,11 @@ void Display()
  else 
  {
   printf("Queue contents are:");
-  for(int i=f;i!=r+1;i=(i+1)%n)
+  for(int i=f;i!=r;i=(i+1)%n)
   {
    printf("%d ",Q[i]);
   }
+  printf("%d",Q[r]);
  }
 }
 
