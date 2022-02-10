@@ -67,7 +67,7 @@ void Display()
 
 void main()
 {
- int ch;
+ int ch,val;
  do{
  printf("\n1.Insert\n2.Delete\n3.Display\n4.Exit\n");
  printf("Enter your choice:");
@@ -93,6 +93,3 @@ void main()
           break;
  }}while(ch!=4);
 }
- 
-
- 
