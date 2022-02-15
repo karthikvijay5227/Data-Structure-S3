@@ -18,11 +18,11 @@ node *NewNode(int val)
 
 void Push(int item)
 {
- p=NewNode(item);
  if(p==NULL)
     printf("overflow");
  else
  {
+        p=NewNode(item);
 	p->link = top;
 	top = p;
  }
