@@ -1,3 +1,4 @@
+//Not complete more work there.
 #include<stdio.h>
 #include<malloc.h>
 struct NODE
