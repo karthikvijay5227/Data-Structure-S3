@@ -23,7 +23,6 @@ void Push(int item)
     printf("overflow");
  else
  {
-	p->info = item;
 	p->link = top;
 	top = p;
  }
