@@ -108,7 +108,7 @@ void Delete(int item)
   curr=head;
   while(curr!=NULL && curr->info != item)
 		curr = curr->next;
-  if(curr->next == NULL)
+  if(curr == NULL)
 		printf("No such element or node");
 	else 
 	{
