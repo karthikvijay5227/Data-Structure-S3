@@ -37,7 +37,7 @@ void Read(int A[],int n)
 
 int Binary(int A[],int n,int item)
 {
- int beg=0,end=n-1,mid,loc;
+ int beg=0,end=n-1,mid;
  while(beg<=end)
  {
   mid=(beg+end)/2;
