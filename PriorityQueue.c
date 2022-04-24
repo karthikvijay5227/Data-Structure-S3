@@ -14,6 +14,7 @@ void main()
  int ch,item;
  do
  {
+  printf("\nPriority Queue Operations!\n");
   printf("\n1.Insert\n2.Delete\n3.Display\n4.Exit\n");
   printf("Enter your choice:");
   scanf("%d",&ch);
@@ -63,7 +64,7 @@ void Delete()
     printf("Empty");
  else
  {
-   printf("Item deleted");
+   printf("%d deleted",PQ[1]);
    Swap(&PQ[1],&PQ[Qsize]);
    Qsize--;
    Heapify(PQ,1,Qsize);
@@ -105,4 +106,3 @@ void Heapify(int A[],int i,int n)
    Heapify(A,small,n);
  }
 }
- 
